@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Clon de Starbucks */
+body {
+    background-color: #f6f9fa;
+}
+
+body>h1{
+    text-align: center;
+    margin: 20px;
+    color: #1e3932;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: #162b26;
+    border-bottom: 1px solid #bdbdbd;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+.header-left nav a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition-duration: .8s;
+}
+
+.header-left nav a:hover {
+    color: #00754a;
+}
+
+.header-right {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.locacion a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    transition-duration: .8s;
+}
+
+.locacion a:hover {
+    color: #00754a;
+}
+
+.btn-registro {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-registro:hover {
+    background-color: #00754a;
+    transition-duration: .4s;
+}
+
+.btn-iniciar {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #fff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-iniciar:hover {
+    background-color: #00754a;
+    color: white;
+    transition-duration: .4s;
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    border-radius: 15px;
+    margin: 50px auto;
+    /* overflow: hidden; */
+    /*   background-color: orange; */
+}
+
+.banner-info,
+.banner-image {
+    /* flex-grow: 1; */
+    width: 50%;
+}
+
+.banner-info {
+    padding: 100px 0 100px 30px;
+    background-color: #1e3932;
+    color: white;
+    border-radius: 18px 0 0 18px;
+}
+
+.banner-info:hover {
+    background-color: #02473b;
+    transition-duration: .9s;
+}
+
+.banner-info a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.banner-image {
+    position: relative;
+    background-image: url('https://franquiciastiendadecafe.com/images/abri-local.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 18px 18px 0;
+}
+
+.banner-image .perrito {
+    position: absolute;
+    right: 5%;
+    bottom: 0;
+    width: 250px;
+    z-index: 1;
+}
+
+.pelota {
+    position: absolute;
+    width: 120px;
+    left: 11%;
+    top: 3%;
+}
+
+.pelota:hover {
+    width: 130px;
+    transition-duration: .4s;
+    rotate: 20deg;
+}
+
+.comida {
+    position: absolute;
+    width: 120px;
+    bottom: 0%;
+    right: 0%;
+
+}
+
+
+/* Footer */
+.content-footer-all {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    max-width: 1300px;
+    gap: 40px;
+    margin: auto;
+}
+.footer-container {
+    display: flex;
+    padding: 0% 10%;
+}
+
+footer {
+    background-color: #1e3932;
+    color: white;
+    padding: 50px 0;
+}
+
+footer a {
+    color: rgba(255, 255, 255, 0.712);
+    text-decoration: none;
+    transition-duration: .4s;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+}
+
+footer h3 {
+    margin-bottom: 30px;
+}
+
+
+/* Práctica conceptos */
+
+.contenedor-flexible {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 10px;
+
+    background-color: blueviolet;
+    border: 2px solid black;
+    width: 600px;
+    height: 500px;
+    color: white;
+}
+
+.boxy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* width: 50%; */
+    height: 80px;
+    background-color: orange;
+    border: 2px solid black;
+    font-size: 1.5rem;
+}
+
+.pato {
+    align-self: auto;
+    width: 50px;
+    width: 40%;
+}
+
+.foca {
+    align-self: auto;
+    width: 40%;
+    flex-shrink: 4;
+}
+
+/* .perro {
+  align-self: auto;
+  flex-grow: 1;
+} */
+.vaca {
+    align-self: auto;
+    width: 40%;
+}
+
+/* Sección Caracterírsticas */
+
+.letras {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #1e3932;
+}
+
+.letras:hover {
+    color: #00754a;
+    transition-duration: .4s;
+}
+
+.layout-Starbucks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2%;
+}
+
+.center, .left, .right {
+    background-color: #00754a0a;
+    padding: 2%;
+    border-radius: 10%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    width: 20%;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+.center:hover, .left:hover, .right:hover {
+    background-color: #00754a1a;
+    transition-duration: .4s;
+}
+.info-Estrellas, .info-Estrellas2, .info-Estrellas-100 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+}
+
+.imagen3, .imagen2 ,.imagen1 {
+    align-self: center;
+}
+
+@media screen and (max-width: 1200px) 
+{
+    .container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .header-left,.header-right {
+        justify-content: center;
+    }
+
+    .layout-Starbucks {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .imagen1,
+    .imagen2,
+    .imagen3 {
+        align-self: center;
+    }
+
+    .left,
+    .center,
+    .right {
+        height: auto;
+        width: auto;
+        padding: 10px 30px;
+        justify-content: flex-start;
+        border-radius: 5px;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width: 890px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header-left,.header-right {
+        justify-content: center;
+    }
+
+    .layout-Starbucks {
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 30px;
+    }
+
+    .imagen1,
+    .imagen2,
+    .imagen3 {
+        align-self: center;
+    }
+
+    .left,
+    .center,
+    .right {
+        height: auto;
+        width: auto;
+        padding: 0 30px;
+        justify-content: flex-start;
+    }
+
+
+}
+
+
+/* Mobile */
+@media screen and (max-width: 576px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .header-left {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .header-right {
+        flex-direction: column;
+        row-gap: 15px;
+        margin-top: 15px;
+    }
+
+    .footer-container ,.content-footer-all {
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+}
