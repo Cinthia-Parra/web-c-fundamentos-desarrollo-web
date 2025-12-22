@@ -415,3 +415,135 @@ footer h3 {
 
 
 }
+
+
+
+
+/*-------------- Estilos del card ------------*/
+
+.contenedor-LOL {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 5%;
+    width: 100%;
+    background-color: rgba(11, 204, 140, 0.123);
+    flex-wrap: wrap;
+
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    justify-content: space-between;
+}
+.boxyLOL{
+    display: flex;
+    width: 18rem;
+    height: 20rem;
+    border-radius: 15px;
+    font-size: 1.5rem;
+}
+
+.image-jungla, .image-mid, .image-support {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image-mid img, .image-jungla img , .image-support img {
+    width: 4rem;
+    height: 4rem;
+    background-color: #000;
+    border-radius: 10%;
+    padding: 0.3rem 0.2rem 0.4rem 0.2rem;
+}
+
+.image-support  img:hover, .image-mid img:hover, .image-jungla img:hover {
+    border: 3px solid #1cd4c5;
+    transition-duration: .9s;
+}
+
+.info.kalista, .info.zyra, .info.karma {
+    display: flex;
+    align-items: center;
+    row-gap: 10px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight:500;
+    font-style: italic;
+    color: #fffaf0;
+}
+
+.name:hover {
+    color: #e4d39b;
+    transition-duration: .9s;
+}
+
+.infoline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00000075;
+    gap: 1rem;
+    padding: 1rem;
+    border-radius: 0rem 0rem  1rem 1rem;
+}
+
+.infoline:hover {
+    background-color: #000000;
+    transition-duration: .9s;
+}
+
+.informacion {
+    color: rgb(211, 177, 132);
+    font-weight: normal;
+}
+
+.line {
+    font-weight: normal;
+    color: #a6e9f3;
+}
+
+/* kalista */
+.jungle{
+    background-image: url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/8/89/Kal-wallpaper.jpg?width=1280');
+}
+
+/* Zyra */
+.mid{
+    background-image: url('https://www.pcgamesn.com/wp-content/sites/pcgamesn/legacy/LoL_Zyra.jpg');
+
+}
+
+/* karma */
+.support {
+    background-image: url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_0.jpg');
+
+}
+
+
+.jungle, .support, .mid {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    margin:1rem ;
+}
+
+.jungle:hover, .support:hover, .mid:hover {
+    transform: scale(1.05);
+    transition-duration: .6s;
+}
