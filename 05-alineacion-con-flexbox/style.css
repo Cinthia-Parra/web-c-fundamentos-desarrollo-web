@@ -639,20 +639,38 @@ nav {
 } */
 
 .boxy.foca.gridItem.A {
-    background-color: #00754a;
+    background-image: url('https://static0.dualshockersimages.com/wordpress/wp-content/uploads/2025/03/feature-image-10-best-top-lane-champions.jpg');
+    background-size: cover;
+    background-position: top;
     grid-column-start: 2;
     grid-column-end: 4;
+    justify-content: center;
+    align-items: center;
 }
 .boxy.foca.gridItem.A:hover {
     background-color: #052017;
     transition-duration: .6s;
 }
 
+.boxy.foca.gridItem.A h5 {
+    color: rgb(255, 244, 255);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 180px 0px;
+}
+.boxy.foca.gridItem.A h5:hover {
+    background-color: rgba(0, 0, 0, 0.897);
+    box-shadow: #1cd4c5 0px 0px 10px 2px;
+    transition-duration: .6s;
+        font-size: 2.1rem;
+}
 
 .boxy.pato.gridItem.B {
     background-image: url('https://cmsassets.rgpub.io/sanity/images/dsfx7636/news_live/89a02acb4e25a0083d9072ca226c25eac75da6bd-1280x720.jpg?accountingTag=LoL?auto=format&fit=crop&q=80&h=537&w=956&crop=center');
     grid-row-start: 1;
     grid-row-end: 4;
+    align-items: center;
     background-size: cover;
     background-position: center;
 }
@@ -664,11 +682,49 @@ nav {
     transition-duration: .9s;
 }
 
+ h5 {
+    color: rgb(255, 244, 255);
+    box-shadow: #dff3f167 0px 0px 10px 2px;
+    font-size: 3rem;
+    padding:1rem;
+    border: 2px solid white;
+    border-radius: 15px;
+}
+
+ h5:hover{
+    background-color: rgba(0, 0, 0, 0.692);
+    box-shadow: #1cd4c5 0px 0px 10px 2px;
+    transition-duration: .8s;
+    font-size: 3.1rem;
+}
+
+.botLine, .topLine, .midLine, .jungleLine {
+    background-size: cover;
+    background-position: center;
+}
+.midLine {
+    background-image: url('https://stealth-core.com/wp-content/uploads/lol-mid-lane.webp');
+}
+
+.botLine {
+    background-image: url('https://cdn.shopify.com/s/files/1/1409/2436/files/Screen_Shot_2021-06-30_at_12.20.57_PM_1024x1024.png?v=1625070208');
+    background-position: bottom;
+}
+
+.topLine {
+    background-image: url('https://api.wecoach.gg/storage/uploads/4641_1758381899.png');
+        background-position: top;
+}
+
+.jungleLine {
+    background-image: url('https://media.pocketgamer.com/artwork/na-30672-1607728672/league%20of%20legends%20wild%20rift%20ios%20android%20map%20jungle_jpg_820.jpg');
+}
 .gridItem {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    align-items: end;
     background-color: orange;
+    color: white;
     border-color: transparent;
     font-size: 1.5rem;
     width: 100%;
@@ -682,3 +738,7 @@ nav {
     transform: scale(1.01);
     transition-duration: .6s;
 }
+
+div h4 {
+display: none;
+} 
