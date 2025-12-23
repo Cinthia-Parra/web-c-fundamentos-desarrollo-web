@@ -25,7 +25,7 @@ header {
     background-color: #162b26;
     border-bottom: 1px solid #bdbdbd;
     position: fixed;
-    width: 100%;
+    width: 100lvw;
     top: auto;
     z-index: 2;
 }
