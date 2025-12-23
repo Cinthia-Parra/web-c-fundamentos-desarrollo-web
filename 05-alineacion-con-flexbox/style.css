@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 !important;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
@@ -8,12 +8,14 @@
 /* Clon de Starbucks */
 body {
     background-color: #f6f9fa;
+
 }
 
 body>h1{
     text-align: center;
     margin: 20px;
     color: #1e3932;
+    padding-top: 20px;
 }
 
 header {
@@ -22,8 +24,17 @@ header {
     padding: 20px 0;
     background-color: #162b26;
     border-bottom: 1px solid #bdbdbd;
+    position: fixed;
+    width: 100%;
+    top: auto;
+    z-index: 2;
 }
 
+.banner {
+    padding-top: 8rem;
+    width: 100%;
+    justify-content: center;
+}
 .container {
     width: 100%;
     display: flex;
@@ -105,7 +116,7 @@ nav {
 .banner {
     display: flex;
     width: 100%;
-    max-width: 1250px;
+    /* max-width: 1250px; */
     border-radius: 15px;
     margin: 50px auto;
     /* overflow: hidden; */
@@ -282,6 +293,7 @@ footer h3 {
     margin-top: 40px;
     margin-bottom: 40px;
     color: #1e3932;
+    padding-top: 1rem;
 }
 
 .letras:hover {
@@ -326,7 +338,6 @@ footer h3 {
 {
     .container {
         flex-direction: column;
-        gap: 30px;
     }
 
     .header-left,.header-right {
@@ -354,6 +365,11 @@ footer h3 {
         justify-content: flex-start;
         border-radius: 5px;
     }
+}
+
+.banner {
+    padding-top: 9rem;
+
 }
 
 /* Tablet */
@@ -386,8 +402,10 @@ footer h3 {
         padding: 0 30px;
         justify-content: flex-start;
     }
+.banner {
+    padding-top: 12rem;
 
-
+}
 }
 
 
@@ -413,9 +431,11 @@ footer h3 {
         text-align: center;
     }
 
+.banner {
+    padding-top: 17rem;
 
 }
-
+}
 
 
 
