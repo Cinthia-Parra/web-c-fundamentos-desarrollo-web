@@ -445,6 +445,7 @@ footer h3 {
     display: flex;
     justify-content: center;
     margin: auto;
+    gap: 1rem;
     padding: 5%;
     width: 100%;
     background-color: rgba(11, 204, 140, 0.123);
