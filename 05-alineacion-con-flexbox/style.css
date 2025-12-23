@@ -130,10 +130,10 @@ nav {
 }
 
 .banner-info {
-    padding: 100px 0 100px 30px;
+    padding: 100px 10px 100px 30px;
     background-color: #1e3932;
     color: white;
-    border-radius: 18px 0 0 18px;
+
 }
 
 .banner-info:hover {
@@ -151,7 +151,7 @@ nav {
     font-weight: bold;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 20px;
+    margin-top: 0.5rem !important;
 }
 
 .banner-image {
@@ -159,7 +159,8 @@ nav {
     background-image: url('https://franquiciastiendadecafe.com/images/abri-local.jpg');
     background-size: cover;
     background-position: center;
-    border-radius: 0 18px 18px 0;
+    border-radius: none;
+
 }
 
 .banner-image .perrito {
@@ -172,15 +173,15 @@ nav {
 
 .pelota {
     position: absolute;
-    width: 120px;
-    left: 11%;
+    width: 160px;
+    left: 0%;
     top: 3%;
 }
 
 .pelota:hover {
-    width: 130px;
-    transition-duration: .4s;
-    rotate: 20deg;
+    width: 200px;
+    transition-duration: 3s;
+    rotate: 980deg;
 }
 
 .comida {
@@ -415,6 +416,12 @@ footer h3 {
         flex-direction: column;
     }
 
+    .layout-Starbucks {
+        margin-bottom: 2rem !important;
+        width: 100lvw;
+        padding: 0%;
+    }
+
     .header-left {
         flex-direction: column;
         gap: 15px;
@@ -429,14 +436,53 @@ footer h3 {
     .footer-container ,.content-footer-all {
         flex-direction: column;
         text-align: center;
+        padding: 1rem;
+        height: max-content;
     }
 
+    .left, .center, .right {
+        height: auto;
+        width: 100lvw;
+        padding: 1rem 2rem;
+        display: inline-flex;
+    }
+
+    .pelota {
+    display: none;
+    }
 .banner {
     padding-top: 17rem;
+}
+h1{
+    font-size: 1.5rem;
+}
 
+.banner-info{
+padding: 6rem 0.5rem 5rem 1rem !important;
+height: min-content;
+border-radius: 0%;
+}
+
+.banner-info a {
+    margin-top: 1rem !important;
+    width: max-content;
+}
+
+
+.letras {
+    padding: 1rem;
+}
+.info-Estrellas, .info-Estrellas2, .info-Estrellas-100 {
+    text-wrap-style: pretty;
+}
+footer h3 {
+    padding-bottom: 0.5rem;
+}
+
+nav {
+    gap: 0.2rem;
 }
 }
-
 
 
 /*-------------- Estilos del card ------------*/
