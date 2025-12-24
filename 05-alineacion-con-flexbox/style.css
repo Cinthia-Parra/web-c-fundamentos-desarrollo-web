@@ -11,7 +11,7 @@ body {
 
 }
 
-body>h1{
+body>h1 {
     text-align: center;
     margin: 20px;
     color: #1e3932;
@@ -35,6 +35,7 @@ header {
     width: 100%;
     justify-content: center;
 }
+
 .container {
     width: 100%;
     display: flex;
@@ -202,6 +203,7 @@ nav {
     gap: 40px;
     margin: auto;
 }
+
 .footer-container {
     display: flex;
     padding: 0% 10%;
@@ -309,7 +311,9 @@ footer h3 {
     padding: 2%;
 }
 
-.center, .left, .right {
+.center,
+.left,
+.right {
     background-color: #00754a0a;
     padding: 2%;
     border-radius: 10%;
@@ -317,31 +321,39 @@ footer h3 {
     align-items: center;
     display: flex;
     width: 20%;
+    min-width: 400px;
     column-gap: 20px;
     justify-content: center;
 }
 
-.center:hover, .left:hover, .right:hover {
+.center:hover,
+.left:hover,
+.right:hover {
     background-color: #00754a1a;
     transition-duration: .4s;
 }
-.info-Estrellas, .info-Estrellas2, .info-Estrellas-100 {
+
+.info-Estrellas,
+.info-Estrellas2,
+.info-Estrellas-100 {
     display: flex;
     flex-direction: column;
     row-gap: 15px;
 }
 
-.imagen3, .imagen2 ,.imagen1 {
+.imagen3,
+.imagen2,
+.imagen1 {
     align-self: center;
 }
 
-@media screen and (max-width: 1200px) 
-{
+@media screen and (max-width: 1200px) {
     .container {
         flex-direction: column;
     }
 
-    .header-left,.header-right {
+    .header-left,
+    .header-right {
         justify-content: center;
     }
 
@@ -379,7 +391,8 @@ footer h3 {
         flex-direction: column;
     }
 
-    .header-left,.header-right {
+    .header-left,
+    .header-right {
         justify-content: center;
     }
 
@@ -403,10 +416,11 @@ footer h3 {
         padding: 0 30px;
         justify-content: flex-start;
     }
-.banner {
-    padding-top: 12rem;
 
-}
+    .banner {
+        padding-top: 12rem;
+
+    }
 }
 
 
@@ -433,14 +447,17 @@ footer h3 {
         margin-top: 15px;
     }
 
-    .footer-container ,.content-footer-all {
+    .footer-container,
+    .content-footer-all {
         flex-direction: column;
         text-align: center;
         padding: 1rem;
         height: max-content;
     }
 
-    .left, .center, .right {
+    .left,
+    .center,
+    .right {
         height: auto;
         width: 100lvw;
         padding: 1rem 2rem;
@@ -448,40 +465,46 @@ footer h3 {
     }
 
     .pelota {
-    display: none;
+        display: none;
     }
-.banner {
-    padding-top: 17rem;
-}
-h1{
-    font-size: 1.5rem;
-}
 
-.banner-info{
-padding: 6rem 0.5rem 5rem 1rem !important;
-height: min-content;
-border-radius: 0%;
-}
+    .banner {
+        padding-top: 17rem;
+    }
 
-.banner-info a {
-    margin-top: 1rem !important;
-    width: max-content;
-}
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-info {
+        padding: 6rem 0.5rem 5rem 1rem !important;
+        height: min-content;
+        border-radius: 0%;
+    }
+
+    .banner-info a {
+        margin-top: 1rem !important;
+        width: max-content;
+    }
 
 
-.letras {
-    padding: 1rem;
-}
-.info-Estrellas, .info-Estrellas2, .info-Estrellas-100 {
-    text-wrap-style: pretty;
-}
-footer h3 {
-    padding-bottom: 0.5rem;
-}
+    .letras {
+        padding: 1rem;
+    }
 
-nav {
-    gap: 0.2rem;
-}
+    .info-Estrellas,
+    .info-Estrellas2,
+    .info-Estrellas-100 {
+        text-wrap-style: pretty;
+    }
+
+    footer h3 {
+        padding-bottom: 0.5rem;
+    }
+
+    nav {
+        gap: 0.2rem;
+    }
 }
 
 
@@ -509,7 +532,8 @@ nav {
     width: 100%;
     justify-content: space-between;
 }
-.boxyLOL{
+
+.boxyLOL {
     display: flex;
     width: 18rem;
     height: 20rem;
@@ -517,7 +541,9 @@ nav {
     font-size: 1.5rem;
 }
 
-.image-jungla, .image-mid, .image-support {
+.image-jungla,
+.image-mid,
+.image-support {
     width: 100%;
     display: flex;
     align-items: center;
@@ -526,7 +552,9 @@ nav {
     padding: 1rem;
 }
 
-.image-mid img, .image-jungla img , .image-support img {
+.image-mid img,
+.image-jungla img,
+.image-support img {
     width: 4rem;
     height: 4rem;
     background-color: #000;
@@ -534,12 +562,16 @@ nav {
     padding: 0.3rem 0.2rem 0.4rem 0.2rem;
 }
 
-.image-support  img:hover, .image-mid img:hover, .image-jungla img:hover {
+.image-support img:hover,
+.image-mid img:hover,
+.image-jungla img:hover {
     border: 3px solid #1cd4c5;
     transition-duration: .9s;
 }
 
-.info.kalista, .info.zyra, .info.karma {
+.info.kalista,
+.info.zyra,
+.info.karma {
     display: flex;
     align-items: center;
     row-gap: 10px;
@@ -549,7 +581,7 @@ nav {
 
 .name {
     font-size: 1.5rem;
-    font-weight:500;
+    font-weight: 500;
     font-style: italic;
     color: #fffaf0;
 }
@@ -567,7 +599,7 @@ nav {
     background-color: #00000075;
     gap: 1rem;
     padding: 1rem;
-    border-radius: 0rem 0rem  1rem 1rem;
+    border-radius: 0rem 0rem 1rem 1rem;
 }
 
 .infoline:hover {
@@ -586,12 +618,12 @@ nav {
 }
 
 /* kalista */
-.jungle{
+.jungle {
     background-image: url('https://oyster.ignimgs.com/mediawiki/apis.ign.com/league-of-legends/8/89/Kal-wallpaper.jpg?width=1280');
 }
 
 /* Zyra */
-.mid{
+.mid {
     background-image: url('https://www.pcgamesn.com/wp-content/sites/pcgamesn/legacy/LoL_Zyra.jpg');
 
 }
@@ -603,14 +635,18 @@ nav {
 }
 
 
-.jungle, .support, .mid {
+.jungle,
+.support,
+.mid {
     background-size: cover;
     background-position: center;
     position: relative;
-    margin:1rem ;
+    margin: 1rem;
 }
 
-.jungle:hover, .support:hover, .mid:hover {
+.jungle:hover,
+.support:hover,
+.mid:hover {
     transform: scale(1.05);
     transition-duration: .6s;
 }
@@ -624,8 +660,10 @@ nav {
     display: grid;
     /* grid-template-columns: 2fr 1fr 1fr;
     grid-template-rows: 1fr 3fr 1fr;  */
-        grid-template-columns: 1fr 1fr 1fr; /*controla las columnas*/
-    grid-template-rows: 1fr 1fr 1fr; /*controla las filas*/
+    grid-template-columns: 1fr 1fr 1fr;
+    /*controla las columnas*/
+    grid-template-rows: 1fr 1fr 1fr;
+    /*controla las filas*/
 
     height: 500px;
     gap: 1rem;
@@ -647,6 +685,7 @@ nav {
     justify-content: center;
     align-items: center;
 }
+
 .boxy.foca.gridItem.A:hover {
     background-color: #052017;
     transition-duration: .6s;
@@ -659,11 +698,12 @@ nav {
     background-color: rgba(0, 0, 0, 0.692);
     border-radius: 180px 0px;
 }
+
 .boxy.foca.gridItem.A h5:hover {
     background-color: rgba(0, 0, 0, 0.897);
     box-shadow: #1cd4c5 0px 0px 10px 2px;
     transition-duration: .6s;
-        font-size: 2.1rem;
+    font-size: 2.1rem;
 }
 
 .boxy.pato.gridItem.B {
@@ -682,26 +722,30 @@ nav {
     transition-duration: .9s;
 }
 
- h5 {
+h5 {
     color: rgb(255, 244, 255);
     box-shadow: #dff3f167 0px 0px 10px 2px;
     font-size: 3rem;
-    padding:1rem;
+    padding: 1rem;
     border: 2px solid white;
     border-radius: 15px;
 }
 
- h5:hover{
+h5:hover {
     background-color: rgba(0, 0, 0, 0.692);
     box-shadow: #1cd4c5 0px 0px 10px 2px;
     transition-duration: .8s;
     font-size: 3.1rem;
 }
 
-.botLine, .topLine, .midLine, .jungleLine {
+.botLine,
+.topLine,
+.midLine,
+.jungleLine {
     background-size: cover;
     background-position: center;
 }
+
 .midLine {
     background-image: url('https://stealth-core.com/wp-content/uploads/lol-mid-lane.webp');
 }
@@ -713,12 +757,13 @@ nav {
 
 .topLine {
     background-image: url('https://api.wecoach.gg/storage/uploads/4641_1758381899.png');
-        background-position: top;
+    background-position: top;
 }
 
 .jungleLine {
     background-image: url('https://media.pocketgamer.com/artwork/na-30672-1607728672/league%20of%20legends%20wild%20rift%20ios%20android%20map%20jungle_jpg_820.jpg');
 }
+
 .gridItem {
     display: flex;
     /* justify-content: center; */
@@ -740,5 +785,57 @@ nav {
 }
 
 div h4 {
-display: none;
-} 
+    display: none;
+}
+
+/* Responsive Mobile */
+@media (max-width: 600px) {
+    .contenedor-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        height: auto;
+        gap: 0.75rem;
+        padding: 0.75rem;
+    }
+
+
+    .boxy.pato.gridItem.B,
+    .boxy.foca.gridItem.A {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        min-height: 160px;
+    }
+
+
+    .contenedor-grid .gridItem {
+        min-height: 120px;
+    }
+
+    .contenedor-grid h5 {
+        font-size: clamp(1.4rem, 5vw, 2rem);
+        padding: 0.8rem 1.2rem;
+    }
+    .contenedor-grid h5 {
+        font-size:1.4rem !important;
+        padding: 0.8rem 1.2rem;
+    }
+    .contenedor-grid :first-child h5 {
+        font-size:2rem !important;
+        background-color: rgba(0, 0, 0, 0.692);
+    }
+
+.boxy.foca.gridItem.A h5 {
+    color: rgb(255, 244, 255);
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: rgba(0, 0, 0, 0.692);
+    }
+
+
+    .contenedor-grid h4 {
+        display: block;
+        font-size: 1.1rem;
+        padding: 0.75rem;
+        margin: 0;
+    }
+}
